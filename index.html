@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Shop Homepage - 2K-Keys</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="styles.css" rel="stylesheet" />
+        <!-- Include productsService.js -->
+        <script src="productService.js"></script>
+		
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#!">2K-Keys</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="shopPage.html">All Products</a></li>
+                        <li class="nav-item"> <a class="nav-link active" href="login.html">Login</a></li>
+                        <li class="nav-item"> <a class="nav-link active" id="logoutButton">Logout</a></li>
+                    </ul>
+                                    <!-- Update the cart overlay content to include a list of items -->
+                <div id="cart-overlay">
+					<div id="confirmationModal" class="modal">
+						<div class="modal-content">
+							<p>Are you sure you want to remove this item from the cart?</p>
+							<button id="confirmYes">Yes</button>
+							<button id="confirmNo">No</button>
+						</div>
+					</div>
+                    <button id="close-cart" class="btn-close" aria-label="Close"> </button>
+                    
+                    <div class="cart-text">Cart </div>
+
+                    <!-- Cart content with a list of items -->
+                    <div class="cart-items-list" id="cart-items-list">
+                        <!-- Sample item entry (you can dynamically generate these with JavaScript) -->
+                       
+                    </div>
+                    
+                    <div class="cart-summary">
+                        <span id="subtotalText" class="summary-text">Subtotal:</span>
+                        <div id="checkout-button" class="checkout-button"> Proceed to Checkout </div>
+                    </div>
+
+                    </div>
+                </div>
+                <form class="d-flex">
+                    <button class="btn btn-outline-dark" id="cart-button" type="button">
+                        <i class="bi-cart-fill me-1"></i>
+                        Cart
+                        <span id="cart-badge" class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                    </button>
+                </form>
+                <div id="popup-message" class="popup-message"></div>
+            </div>
+        </div>
+    </nav>
+        
+        <!-- Header-->
+        <header class="bg-dark py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">Welcome to 2k-Keys!</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">For all your software needs</p>
+                    <a href="shopPage.html" class="btn btn-primary" style="margin-top:20px;">Shop Now</a>
+                </div>
+            </div>
+        </header>
+
+        
+        <div class="header-title" style="margin-left: 20px; margin-top: 25px;">
+            <h2>Featured Products</h2>
+        </div>
+        <div class="homepage-container">
+            <div id="prev-btn-featured" class="nav-btn">&lt;</div>
+            
+            <div class="carousel-wrapper">
+                <div id="featured-carousel" class="product-carousel">
+                <!-- Product cards will go here -->
+              </div>
+            </div>
+            
+            <div id="next-btn-featured" class="nav-btn">&gt;</div>
+        </div>
+        <div class="header-title" style="margin-left: 20px; margin-top: 25px;">
+            <h2>New Arrivals</h2>
+        </div>
+        <div class="homepage-container">
+            <div id="prev-btn-new" class="nav-btn">&lt;</div>
+            <div class="carousel-wrapper">
+                <div id="new-carousel" class="product-carousel">
+                <!-- Product cards will go here -->
+              </div>
+            </div>
+            <div id="next-btn-new" class="nav-btn">&gt;</div>
+        </div>
+        <div class="header-title" style="margin-left: 20px; margin-top: 25px;">
+            <h2>Popular Items</h2>
+        </div>
+        <div class="homepage-container">
+            <div id="prev-btn-popular" class="nav-btn">&lt;</div>
+            <div class="carousel-wrapper">
+                <div id="popular-carousel" class="product-carousel">
+                <!-- Product cards will go here -->
+              </div>
+            </div>
+            <div id="next-btn-popular" class="nav-btn">&gt;</div>
+        </div>
+        
+
+
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="scripts.js"></script>
+        <script src="navBarScripts.js"></script>
+	    <script src="js/logout.js"></script>
+    </body>
+</html>
